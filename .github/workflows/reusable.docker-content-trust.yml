@@ -18,6 +18,8 @@
 name: Docker Content Trust
 
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       dockerhub_image_reference:
