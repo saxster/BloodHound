@@ -16,9 +16,8 @@
 name: External Authorship Check
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+  push:
+    branches: [main]
 jobs:
   check-author:
     runs-on: self-hosted
