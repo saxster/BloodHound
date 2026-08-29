@@ -17,14 +17,8 @@
 name: Continuous Integration (CI)
 
 on:
-  pull_request:
-    branches:
-      - main
-      - 'stage/**'
-    types:
-      - opened
-      - synchronize
-
+  push:
+    branches: [main]
 jobs:
   cla-check:
     # the if statement skips the CLA check when running locally using act
