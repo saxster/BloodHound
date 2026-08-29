@@ -17,14 +17,8 @@
 name: Build UI
 
 on:
-  pull_request:
-    branches:
-      - main
-      - "stage/**"
-    types:
-      - opened
-      - synchronize
-
+  push:
+    branches: [main]
 jobs:
   build-ui:
     runs-on: ubuntu-latest
